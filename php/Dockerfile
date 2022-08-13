@@ -19,6 +19,6 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql zip
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install NPM & node
-RUN curl -sl https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -sl https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get install -y nodejs build-essential
 
